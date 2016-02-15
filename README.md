@@ -4,6 +4,12 @@ Generate a static software to host your lessons. The generated content will be h
 
 ![](demo.png)
 
+## Installation
+
+1. [Download](https://github.com/cedced19/learn-memory-static-desktop/releases/latest)
+2. Extract
+3. Execute `learn-memory-static.exe`
+
 ## Dev
 
 ```

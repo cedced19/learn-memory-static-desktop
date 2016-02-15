@@ -1,6 +1,6 @@
 {
   "name": "learn-memory-static-desktop",
-  "productName": "Learn-Memory-Static",
+  "productName": "learn-memory-static",
   "version": "0.0.0",
   "description": "My shining app",
   "license": "MIT",
@@ -18,7 +18,6 @@
   "dependencies": {
     "decompress-zip": "^0.2.0",
     "electron-debug": "^0.5.0",
-    "gulp-electron-packager": "^1.0.2",
     "is-there": "^4.3.1",
     "notie": "^2.1.0",
     "request": "^2.69.0"

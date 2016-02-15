@@ -48,7 +48,7 @@ gulp.task('dist-win', ['minify', 'install'], function () {
       arch: 'x64',
       platform: 'win32',
       icon: 'favicon.ico',
-      name: 'Learn-Memory-Static',
+      name: pkg.productName,
       overwrite: true,
       dir: './minified',
       out: './build',
@@ -56,7 +56,7 @@ gulp.task('dist-win', ['minify', 'install'], function () {
     }, function done (err, appPath) {
       if (err) throw err;
       console.log(`The app was compiled in ${appPath}.`);
-      return gulp.src('build/Learn-Memory-Static-win32-x64/**/**')
+      return gulp.src(`build/${pkg.productName}-win32-x64/**/**`)
           .pipe(zip('Windows.zip'))
           .pipe(gulp.dest('dist/'));
     });
