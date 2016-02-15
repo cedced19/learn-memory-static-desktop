@@ -28,8 +28,6 @@ gulp.task('copy-fonts', function() {
 });
 
 gulp.task('html', function () {
-
-
     return gulp.src('index.html')
         .pipe(useref())
         .pipe(gulpif('*.js', uglify()))
@@ -57,11 +55,11 @@ gulp.task('dist-win', ['minify', 'install'], function () {
       version: pkg.electronVersion
     }, function done (err, appPath) {
       if (err) throw err;
-      console.log(`The app was compiled in ${appPath}.` )
+      console.log(`The app was compiled in ${appPath}.`);
       return gulp.src('build/Learn-Memory-Static-win32-x64/**/**')
           .pipe(zip('Windows.zip'))
           .pipe(gulp.dest('dist/'));
     });
 });
 
-gulp.task('default', ['dist-osx64', 'dist-osx32', 'dist-linux64', 'dist-linux32']);
+gulp.task('default', ['dist-win']);

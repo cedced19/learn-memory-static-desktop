@@ -1,7 +1,6 @@
-# learn-memory-static-desktop
+# Learn Memory Static Generator
 
-> My shining app
-
+Generate a static software to host your lessons. The generated content will be hosted only on a basic http server.
 
 ## Dev
 
@@ -15,8 +14,8 @@ $ npm install
 $ npm start
 ```
 
-### Build the app for Windows
+### Build the app
 
 ```
-$ npm build
+$ npm run build
 ```
